@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff8f0;
+}
+
+/* Header Menu */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 50px;
+}
+#decore img {
+  border-radius: 50%;
+  height: 10px;
+}
+.menu {
+  display: flex;
+  gap: 30px;
+  margin: 0 auto;
+}
+
+.menu-item {
+  position: relative;
+  cursor: pointer;
+  color: #141d6a;
+}
+.menu-item:hover {
+  color: orangered;
+}
+.menu-item i {
+  margin-left: 5px;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.submenu a:hover {
+  color: orangered;
+}
+.menu-item:hover .submenu {
+  display: block;
+}
+
+.submenu a {
+  display: block;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  color: #141d6a;
+  text-decoration: none;
+}
+
+.submenu a:last-child {
+  margin-bottom: 0;
+}
+
+/* Carousel Section
+.carousel {
+  position: relative;
+  width: 100%;
+  /* margin: 20px auto; */
+/* overflow: hidden;
+  border-radius: 10px;
+  left: 0;
+  right: 0;
+  height: 900px;
+} */
+
+/* .carousel img {
+  width: 100%;
+  flex-shrink: 0;
+} */
+
+#btn {
+  color: #560bad;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  height: 30px;
+  width: 12rem;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #560bad;
+  transition: color 0.5s;
+  z-index: 1;
+}
+#btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #560bad;
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+#btn:hover {
+  color: #fff;
+}
+#btn:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+  border-radius: 50%;
+}
+
+#btn:hover:before {
+  top: -30px;
+  left: -30px;
+}
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#button {
+  margin-top: 10px;
+  height: 50px;
+  border-radius: 10px;
+  color: #fdfdfd;
+  background-color: #f48220;
+  object-fit: cover;
+  justify-content: space-between;
+  font-size: 20px;
+}
+#button:hover {
+  background-color: #141d6a;
+  background: darksalmon;
+}
+
+#last-btn {
+  border-radius: 10px;
+  background-color: #141d6a;
+  color: #fff;
+}
+#last-btn:hover {
+  color: #f08423;
+}
+
+.btn {
+  padding-left: 30rem;
+}
+.btn__btn-effect {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #ff0072;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #ff0072;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+  margin: auto;
+}
+
+.btn__btn-effect:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #d651b9;
+  z-index: -1;
+}
+
+.btn__btn-effect:hover,
+.btn__btn-effect:focus {
+  color: white;
+}
+
+.btn__btn-effect:hover:before,
+.btn__btn-effect:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.btn__btn-effect:active {
+  transform: scale(0.9);
+}
+
+/* From Uiverse.io by ammarsaa */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  color: #54a00f;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.title::before,
+.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #f9c801;
+}
+
+.message,
+.signin {
+  font-size: 14.5px;
+  color: #54a00f;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a:hover {
+  text-decoration: underline royalblue;
+}
+
+.signin a {
+  color: #00bfff;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  padding: 20px 05px 05px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 12.5px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span {
+  color: #00bfff;
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.input {
+  font-size: 20px;
+}
+.input__1 {
+  font-size: 12px;
+  height: 19px;
+}
+.input__2 {
+  font-size: medium;
+}
+button .submit {
+  background-color: #54a00f;
+}
+.submit {
+  border: none;
+  outline: none;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: 0.3s ease;
+  background-color: #54a00f;
+}
+
+.submit:hover {
+  background-color: #54a00f;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+.container {
+  position: relative;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+}
+
+.carousel-images__img {
+  width: 100%;
+  height: auto;
+}
+
+.form {
+  position: absolute;
+  top: 60%; /* Hạ form xuống một chút, có thể thay đổi giá trị tùy thích */
+  right: 0; /* Dính chắc vào cạnh phải */
+  transform: translateY(
+    -50%
+  ); /* Căn giữa theo chiều dọc (sau khi thay đổi top) */
+  background: rgba(255, 255, 255, 0.7); /* Màu nền nhẹ cho form */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  width: 80%; /* Hoặc có thể điều chỉnh theo ý muốn */
+  max-width: 400px;
+}
+
+.form .title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.form .message {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #5c6bc0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #3f51b5;
+}
+
+.signin {
+  text-align: center;
+  font-size: 14px;
+}
+
+.signin a {
+  color: #5c6bc0;
+  text-decoration: none;
+}

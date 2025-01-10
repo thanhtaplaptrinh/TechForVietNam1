@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="/Assets/main/script.js"></script>
+    <title>Trang chủ - Tech For Viet Nam</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+
+    <header class="header">
+      <div class="logo"><a href="#"><img src="/logo.svg" alt="" /></a></div>
+      
+      <nav class="menu">
+        <div class="menu-item">
+          <b>Về chúng tôi</b> <i class="fa-solid fa-sort-down"></i>
+          <div class="submenu">
+            <a href="/Assets/TXT/vechungtoi.txt" target="_blank">Giới thiệu chung</a>
+            <a href="#" target="_blank">Đội ngũ</a>
+            <a href="/Assets/TXT/tuyendung.txt" target="_blank">Tuyển dụng</a>
+          </div>
+        </div>
+        <div class="menu-item">
+         <b> Chương trình – Dự án</b> <i class="fa-solid fa-sort-down"></i>
+          <div class="submenu">
+            <a href="/Assets/TXT/chuongtirnh.txt" target="_blank">Chương trình phát triển giáo dục tiên phong</a>
+            <a href="#"
+              >Chương trình chạy vì giáo dục - Run for eudcation
+              <i class="fa-solid fa-sort-down"></i>
+            </a>
+          </div>
+        </div>
+        <div class="menu-item">
+          <b>Tin tức</b> <i class="fa-solid fa-sort-down"></i>
+          <div class="submenu">
+            <a href="https://teachforvietnam.org/tin-tuc/" target="_blank">Tin hoạt động</a>
+            <a href="https://teachforvietnam.org/category/chuyen-dia-ban/" target="_blank">Chuyện địa bàn</a>
+            <a href="https://teachforvietnam.org/bao-cao-tac-dong/" target="_blank">Báo cáo tác động</a>
+          </div>
+        </div>
+        <div class="menu-item">
+         <b> Hợp tác </b><i class="fa-solid fa-sort-down"></i>
+          <div class="submenu">
+            <a href="https://teachforvietnam.org/tai-tro-ca-nhan/" target="_blank">Tài trợ cá nhân</a>
+            <a href="https://teachforvietnam.org/doi-tac-doanh-nghiep/" target="_blank">Đối tác doanh nghiệp</a>
+            <a href="https://teachforvietnam.org/tro-thanh-dai-su-gay-quy/" target="_blank">Trở thành đại sứ gây quỹ</a>
+            <a href="https://teachforvietnam.org/thong-tin-tai-khoan-nhan-tai-tro/" target="_blank">Thông tin tài khoản nhận tài trợ</a>
+          </div>
+        </div>
+        <a href=""><button id="btn"><b>Ứng tuyển</b></button></a>
+        <a href=""><button id="btn"><b>Tài trợ</b></button></a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="carousel">
+          <div class="carousel-images" id="carousel-images">
+              <img src="/main-pics.png" alt="Image 1" width="100%" class="carousel-images__img"/>
+          </div>
+          <form class="form">
+              <p class="title">Register</p>
+              <p class="message">Signup now and get full access to our app.</p>
+              <div class="flex">
+                  <label>
+                      <input class="input input__1" type="text" placeholder="" required="">
+                      <span>Firstname</span>
+                  </label>
+  
+                  <label>
+                      <input class="input input__2" type="text" placeholder="" required="">
+                      <span class="input__middle">Lastname</span>
+                  </label>
+              </div>
+  
+              <label>
+                  <input class="input" type="email" placeholder="" required="">
+                  <span class="input__middle">Email</span>
+              </label>
+  
+              <label>
+                  <input class="input" type="password" placeholder="" required="">
+                  <span>Password</span>
+              </label>
+              <label>
+                  <input class="input" type="password" placeholder="" required="">
+                  <span>Confirm password</span>
+              </label>
+              <button class="submit">Submit</button>
+              <p class="signin">Already have an account? <a href="#">Signin</a></p>
+          </form>
+      </div>
+  </div>
+    
+  <div class="btn">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8BCxcwTYMN_r1KmPYVO9UQZZyWItgqyzj_uc0Gxu_4Uh7YQ/viewform" class="btn__btn-link" target="_blank">
+      <button class="btn__btn-effect"> Click vào đây để tới form đăng ký!
+      </button>
+    </a>
+  </div>  
+  
+   
+  
+</html>
